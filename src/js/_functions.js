@@ -52,8 +52,8 @@ import { enableScroll } from './functions/enable-scroll';
 // Подключение свайпера
 // import Swiper, { Navigation, Pagination } from 'swiper';
 // Swiper.use([Navigation, Pagination]);
-// const swiper = new Swiper(el, {
-//   slidesPerView: 'auto',
+// const swiper = new Swiper('.swiper', {
+//   slidesPerView: '4',
 // });
 
 // Подключение анимаций по скроллу

@@ -1,7 +1,6 @@
 .section-map {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 40px;
   &__left {
     display: flex;
     flex-direction: column;
@@ -38,7 +37,7 @@
 @media screen and (max-width: 1200px) {
   .section-map {
     padding-top: 26px;
-    padding-bottom: 45px;
+    padding-bottom: 28px;
     &__left {
       max-width: 456px;
       margin-right: 40px;
@@ -65,6 +64,7 @@
   .section-map {
     flex-direction: column-reverse;
     padding-top: 0;
+    padding-bottom: 0;
     &__left {
       width: 100%;
       max-width: 100%;
