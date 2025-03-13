@@ -84,3 +84,55 @@ import { enableScroll } from './functions/enable-scroll';
 // };
 
 // validateForms('.form-1', rules1, afterForm);
+
+// Яндекс карта
+
+ymaps.ready(init);
+
+function init() {
+    const map = new ymaps.Map("map", {
+        center: [55.751694, 37.626956],
+        zoom: window.innerWidth < 1200 ? 10.5 : 11.5,
+        controls: ['zoomControl', 'typeSelector']
+    });
+
+    // Функция для получения размера метки в зависимости от экрана
+    function getIconSize() {
+        if (window.innerWidth > 1200) return [54, 44];
+        if (window.innerWidth > 768) return [40, 32];
+        if (window.innerWidth > 576) return [40, 38];
+        return [32, 30];  // Мобильные устройства
+    }
+
+    // Данные меток (координаты)
+    const placemarks = [
+        [55.752631, 37.545335],
+        [55.718519, 37.599947],
+        [55.740037, 37.673051],
+        [55.700944, 37.708201]
+    ];
+
+    // Создание и добавление меток
+    placemarks.forEach(coords => {
+        const placemark = new ymaps.Placemark(
+            coords,
+            {},
+            {
+                iconLayout: "default#image",
+                iconImageHref: "img/Location.svg",
+                iconImageSize: getIconSize(),
+                iconImageOffset: [-getIconSize()[0] / 2, -getIconSize()[1]]
+            }
+        );
+        map.geoObjects.add(placemark);
+    });
+
+    // Обновление размера меток при изменении экрана
+    window.addEventListener("resize", () => {
+        const newSize = getIconSize();
+        map.geoObjects.each(placemark => {
+            placemark.options.set("iconImageSize", newSize);
+            placemark.options.set("iconImageOffset", [-newSize[0] / 2, -newSize[1]]);
+        });
+    });
+}

@@ -6,8 +6,33 @@
 <body class="page__body">
   <div class="site-container">
     @include('partials/header.html')
-    <main class="main">
+    <main class="main container">
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <ul class="breadcrumbs__list list-reset">
+          <li class="breadcrumbs__item">
+            <a href="/" class="breadcrumbs__link">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a href="#" class="breadcrumbs__link">О компании</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a href="#" class="breadcrumbs__link">Наши проекты</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <span class="breadcrumbs__current">СИЭНПИ РУС</span>
+          </li>
+        </ul>
+      </nav>
+      <section class="section-map">
+        <div class="section-map__left">
+          <h1 class="section-map__heading">Шоурумы</h1>
+          <p class="section-map__descr">Приглашаем Вас посмотреть вживую коллекции офисной мебели для персонала, кабинеты для руководителя, офисные диваны, офисные кресла и стулья, а также обсудить эргономику вашего офисного пространства в наших шоурумах</p>
+        </div>
+        <div class="section-map__right">
+          <div class="section-map__map" id="map"></div>
+        </div>
 
+      </section>
 
     </main>
 

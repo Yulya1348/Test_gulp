@@ -152,6 +152,7 @@
     padding-right: 40px;
   }
   .header {
+    padding-bottom: 16px;
     &__logo {
       display: flex;
       width: 131px;
@@ -213,7 +214,7 @@
     }
     &__contacts-item:nth-last-child(2) {
       margin-right: 8px;
-  }
+    }
   }
 
 }
