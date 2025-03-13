@@ -163,7 +163,48 @@
           <button class="section-list__btn">Записаться в шоурум</button>
         </div>
       </section>
-
+      <section class="section-cards">
+        <ul class="section-cards__list list-reset">
+          <li class="section-cards__item">
+            <img class="section-cards__icon" src="img/24.svg" alt="">
+            <span class="section-cards__text">Работаем 24/7</span>
+          </li>
+          <li class="section-cards__item">
+            <img class="section-cards__icon" src="img/Geometric.svg" alt="">
+            <span class="section-cards__text">3-D визуал пространства</span>
+          </li>
+          <li class="section-cards__item">
+            <img class="section-cards__icon" src="img/Business.svg" alt="">
+            <span class="section-cards__text">Подборка офисной мебели</span>
+          </li>
+          <li class="section-cards__item">
+            <img class="section-cards__icon" src="img/DeliveryTruck.svg" alt="">
+            <span class="section-cards__text">Быстрая доставка</span>
+          </li>
+          <li class="section-cards__item">
+            <img class="section-cards__icon" src="img/Tools.svg" alt="">
+            <span class="section-cards__text">Аккуратная сборка</span>
+          </li>
+          <li class="section-cards__item">
+            <img class="section-cards__icon" src="img/Color-palette.svg" alt="">
+            <span class="section-cards__text">Декорирование</span>
+          </li>
+        </ul>
+      </section>
+      <section class="section-form">
+        <div class="section-form__content">
+          <h2 class="section-form__heading">Записаться в шоурум</h2>
+          <form class="section-form__form" action="#" method="post">
+            <input class="section-form__input" type="text" name="name" id="name" placeholder="Имя *">
+            <div class="section-form__input-wrap">
+              <input class="section-form__input section-form__input--sm section-form__input--left" type="tel" name="phone" id="phone" placeholder="+7 (999) 999-99-99">
+              <input class="section-form__input section-form__input--sm" type="email" name="email" id="email" placeholder="Электронная почта">
+            </div>
+            <button class="section-form__btn section-list__btn" type="submit">Отправить</button>
+            <span class="section-form__text">Нажимая на кнопку, вы подтверждаете свое согласие на обработку персональных данных.</span>
+          </form>
+        </div>
+      </section>
     </main>
 
     @include('partials/footer.html')
