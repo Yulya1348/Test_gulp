@@ -1,0 +1,50 @@
+<header class="header">
+  <div class="container header__container">
+    <a class="header__logo" href="index.html">
+      <picture class="header__logo">
+        <source class="header__logo-image" srcset="img/logo_mob.svg" media="(max-width: 992px)">
+        <img class="header__logo-mob" src="img/logo.svg" alt="Логотип">
+      </picture>
+
+    </a>
+    <nav class="header__nav" title="Главное меню" data-menu>
+      <button class="btn-reset header__burger-close" aria-label="Закрыть меню" data-menu-close></button>
+      <ul class="header__list list-reset">
+        <li class="header__item">
+          <a class="header__link" href="#" data-menu-item data-scroll>Каталог</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="#" data-menu-item data-scroll>Услуги и сервисы</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="#" data-menu-item data-scroll>О компании</a>
+        </li>
+        <li class="header__item">
+          <a class="header__phone-mob header__phone" href="tel:+74951205391">+7 &#40;495&#41; 120-53-91</a>
+        </li>
+      </ul>
+    </nav>
+    <ul class="header__contacts list-reset">
+      <li class="header__contacts-item">
+        <a class="header__phone" href="tel:+74951205391">+7 &#40;495&#41; 120-53-91</a>
+      </li>
+      <li class="header__contacts-item">
+        <button class="btn-reset header__button header__button--list"></button>
+      </li>
+      <li class="header__contacts-item">
+        <button class="btn-reset header__button header__button--search"></button>
+      </li>
+      <li class="header__contacts-item">
+        <button class="btn-reset header__button header__button--user"></button>
+      </li>
+      <li class="header__contacts-item">
+        <button class="btn-reset header__button header__button--basket">
+          <span class="header__button-count">44</span>
+        </button>
+      </li>
+      <li class="header__contacts-item">
+        <button class="btn-reset header__burger" aria-label="Открыть меню" aria-expanded="false" data-burger></button>
+      </li>
+    </ul>
+  </div>
+</header>

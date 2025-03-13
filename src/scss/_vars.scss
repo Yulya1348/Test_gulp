@@ -1,0 +1,15 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "Proxima Nova", sans-serif;
+  --content-width: 1408px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --text-black: #282828;
+  --text-gray: #838B8E;
+  --button-color: #55D287;
+  --white-color: #fff;
+}
