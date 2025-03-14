@@ -70,7 +70,7 @@
 @media screen and (max-width: 1200px) {
   .section-form {
     padding-top: 60px;
-    padding-bottom: 104px;
+    padding-bottom: 101px;
     &__content {
       padding: 34px;
     }
@@ -99,7 +99,7 @@
 
 @media screen and (max-width: 992px) {
   .section-form {
-    padding-bottom: 96px;
+    padding-bottom: 91px;
     &__form {
       width: 100%;
       max-width: 624px;
@@ -110,6 +110,7 @@
 @media screen and (max-width: 576px) {
   .section-form {
     padding-top: 24px;
+    padding-bottom: 80px;
     &__content {
       padding: 21px;
     }
